@@ -8,7 +8,7 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
 pickle_in = open("DT.pkl","rb")
 model=pickle.load(pickle_in)
-dataset= pd.read_csv('DATA.csv')
+dataset= pd.read_csv('Data.csv')
 X = dataset.iloc[:,0:14].values
 
 # Taking care of missing data
